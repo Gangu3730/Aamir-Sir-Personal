@@ -1,0 +1,81 @@
+/* Forms + private community, styled with the website's own tokens (teal #0F9E9A, Poppins / Roboto). */
+:root{--teal:#0F9E9A;--teal-dark:#0b7d7a;--ink:#1d2327;--muted:#6b7378;--line:#e3e8ea;--bg-soft:#f4faf9;--danger:#c0392b;--ok:#1e8449}
+body{font-family:"Poppins","Roboto",sans-serif;color:var(--ink)}
+
+/* ---------- Auth ---------- */
+.auth-wrap{padding:60px 20px 80px}
+.auth-wrap .elementor-heading-title{text-align:center;color:var(--teal);font-family:"Poppins",sans-serif;font-weight:600;margin:0 0 30px}
+.auth-intro{max-width:760px;margin:0 auto 34px}
+.auth-card{max-width:760px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:14px;padding:34px;box-shadow:0 10px 30px rgba(15,158,154,.07)}
+.auth-lead{margin:0 0 20px;line-height:1.7;color:#454c50}
+.auth-form label{display:block;font-size:14px;font-weight:500;margin:14px 0 6px}
+.auth-form abbr{color:var(--danger);text-decoration:none}
+.auth-form input[type=text],.auth-form input[type=email],.auth-form input[type=password],.auth-form input[type=tel],.auth-form input[type=url],.auth-form textarea,.auth-form select{width:100%;border:1px solid #cfd8db;border-radius:8px;padding:12px 14px;font:inherit;font-size:15px;background:#fff;transition:border-color .15s,box-shadow .15s}
+.auth-form input:focus,.auth-form textarea:focus{outline:0;border-color:var(--teal);box-shadow:0 0 0 3px rgba(15,158,154,.18)}
+.auth-form input[readonly]{background:#f3f6f7;color:var(--muted)}
+.auth-btn{display:inline-block;margin-top:22px;background:var(--teal);color:#fff;border:0;border-radius:8px;padding:13px 30px;font:600 15px "Poppins",sans-serif;cursor:pointer;transition:background .15s}
+.auth-btn:hover{background:var(--teal-dark)}
+.auth-row{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:12px;font-size:14px}
+.auth-row a,.auth-alt a{color:var(--teal);text-decoration:none}.auth-row a:hover,.auth-alt a:hover{text-decoration:underline}
+.auth-check{display:flex!important;align-items:center;gap:8px;margin:0!important;font-weight:400!important}
+.auth-alt{margin:18px 0 0;font-size:14px;color:var(--muted)}
+.auth-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 20px}
+.auth-field--full{grid-column:1/-1}
+.auth-error{display:block;color:var(--danger);font-size:13px;margin-top:5px}
+.auth-alert{border-radius:8px;padding:12px 16px;margin-bottom:18px;font-size:14px}
+.auth-alert--ok{background:#e9f7f0;color:var(--ok);border:1px solid #bfe6d1}
+.auth-alert--err{background:#fdecea;color:var(--danger);border:1px solid #f5c6c0}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+@media(max-width:700px){.auth-grid{grid-template-columns:1fr}.auth-card{padding:22px}}
+
+/* ---------- Community ---------- */
+.cm{max-width:1000px;margin:0 auto;padding:40px 20px 80px}
+.cm-top{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:24px}
+.cm-title{font-family:"Poppins",sans-serif;font-weight:600;font-size:30px;color:var(--teal);margin:0}
+.cm-nav{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.cm-nav a,.cm-nav button{background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 16px;font:500 14px "Poppins",sans-serif;color:var(--ink);text-decoration:none;cursor:pointer}
+.cm-nav a.on,.cm-nav a:hover,.cm-nav button:hover{border-color:var(--teal);color:var(--teal)}
+.cm-badge{display:inline-block;min-width:18px;background:var(--teal);color:#fff;border-radius:999px;font-size:11px;padding:1px 6px;margin-left:4px}
+.cm-search{display:flex;gap:8px;margin-bottom:22px}
+.cm-search input{flex:1;border:1px solid #cfd8db;border-radius:8px;padding:11px 14px;font:inherit}
+.cm-search select{border:1px solid #cfd8db;border-radius:8px;padding:11px;font:inherit;background:#fff}
+.cm-btn{background:var(--teal);color:#fff;border:0;border-radius:8px;padding:10px 20px;font:600 14px "Poppins",sans-serif;cursor:pointer;text-decoration:none;display:inline-block}
+.cm-btn:hover{background:var(--teal-dark)}.cm-btn--ghost{background:#fff;color:var(--teal);border:1px solid var(--teal)}
+.cm-btn--ghost:hover{background:var(--bg-soft)}.cm-btn--sm{padding:6px 14px;font-size:13px}.cm-btn--danger{background:var(--danger)}
+.cm-card{display:flex;gap:20px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;margin-bottom:18px;transition:box-shadow .15s}
+.cm-card:hover{box-shadow:0 8px 24px rgba(0,0,0,.06)}
+.cm-card img{width:160px;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:10px;flex:none;display:block}
+.cm-card>div{min-width:0;flex:1}
+.cm-card h2{font:600 20px/1.35 "Poppins",sans-serif;margin:0 0 6px}.cm-card h2 a{color:var(--ink);text-decoration:none}.cm-card h2 a:hover{color:var(--teal)}
+.cm-meta{font-size:13px;color:var(--muted);display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.cm-tag{background:var(--bg-soft);color:var(--teal);border-radius:999px;padding:2px 10px;font-size:12px;font-weight:500}
+.cm-pin{color:#b7791f;font-weight:600}
+.cm-excerpt{margin:8px 0 0;color:#454c50;line-height:1.6}
+.cm-article{background:#fff;border:1px solid var(--line);border-radius:14px;padding:32px}
+.cm-article h1{font:600 30px/1.3 "Poppins",sans-serif;margin:0 0 10px}
+.cm-body{line-height:1.8;font-size:16px;margin-top:22px}.cm-body img{max-width:100%;height:auto;border-radius:8px}.cm-body h2,.cm-body h3{font-family:"Poppins",sans-serif;margin-top:1.6em}
+.cm-hero{display:block;width:100%;height:220px;max-height:220px;object-fit:cover;border-radius:12px;margin-top:18px}
+@media(max-width:700px){.cm-hero{height:150px;max-height:150px}}
+.cm-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px;padding-top:18px;border-top:1px solid var(--line)}
+.cm-flash{background:#e9f7f0;border:1px solid #bfe6d1;color:var(--ok);border-radius:8px;padding:12px 16px;margin-bottom:18px}
+.cm-errors{background:#fdecea;border:1px solid #f5c6c0;color:var(--danger);border-radius:8px;padding:12px 16px;margin-bottom:18px}
+.cm-comments{margin-top:34px}.cm-comments h3{font:600 20px "Poppins",sans-serif}
+.cm-comment{display:flex;gap:12px;margin-top:18px}
+.cm-avatar{flex:none;width:38px;height:38px;border-radius:50%;background:var(--teal);color:#fff;display:flex;align-items:center;justify-content:center;font:600 13px "Poppins",sans-serif}
+.cm-cbody{flex:1;min-width:0}.cm-cname{font-weight:600;font-size:14px}.cm-cname small{color:var(--muted);font-weight:400;margin-left:6px}
+.cm-ctext{margin:3px 0 6px;line-height:1.6;white-space:pre-line;word-wrap:break-word}
+.cm-clinks{font-size:13px;display:flex;gap:12px}.cm-clinks a,.cm-clinks button{background:none;border:0;padding:0;color:var(--teal);cursor:pointer;font:inherit}
+.cm-replies{margin-left:6px;border-left:2px solid var(--line);padding-left:16px}
+.cm-form textarea{width:100%;border:1px solid #cfd8db;border-radius:8px;padding:12px;font:inherit;min-height:90px;resize:vertical}
+.cm-form input[type=text]{width:100%;border:1px solid #cfd8db;border-radius:8px;padding:12px;font:inherit}
+.cm-form label{display:block;font-weight:500;margin:14px 0 6px;font-size:14px}
+.cm-reply{display:none;margin-top:10px}.cm-reply.open{display:block}
+.cm-panel{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px;margin-bottom:22px}
+.cm-panel h2{font:600 18px "Poppins",sans-serif;margin:0 0 6px}
+.cm-notif{padding:14px 0;border-bottom:1px solid var(--line)}.cm-notif a{color:var(--ink);text-decoration:none}.cm-notif a:hover{color:var(--teal)}.cm-notif.unread{font-weight:600}
+.cm-pager{display:flex;gap:6px;flex-wrap:wrap;margin-top:24px}.cm-pager a,.cm-pager span{border:1px solid var(--line);border-radius:8px;padding:6px 12px;font-size:14px;text-decoration:none;color:var(--ink);background:#fff}.cm-pager .cur{background:var(--teal);color:#fff;border-color:var(--teal)}
+.cm-empty{text-align:center;color:var(--muted);padding:50px 0}
+@media(max-width:700px){.cm-card{flex-direction:column}.cm-card img{width:140px;height:auto;aspect-ratio:1/1}.cm-article{padding:20px}.cm-search{flex-wrap:wrap}}
+/* Header login icon: keep it icon-sized even if the image falls back to the placeholder. */
+.my-user-icon{display:flex;align-items:center;justify-content:center}
+.my-user-icon img{width:28px;height:28px;max-width:28px;object-fit:contain;border-radius:50%}

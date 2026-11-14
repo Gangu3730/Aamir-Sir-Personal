@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /admin
+Disallow: /community
+Disallow: /login
+Disallow: /registration
+Disallow: /lost-password
+Disallow: /reset-password
